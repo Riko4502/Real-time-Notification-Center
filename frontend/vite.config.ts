@@ -5,6 +5,9 @@ import path from 'path';
 const apiTarget = process.env.VITE_API_TARGET || 'http://127.0.0.1:3001';
 
 export default defineConfig({
+  build: {
+    cssMinify: 'esbuild',
+  },
   plugins: [react()],
   resolve: {
     alias: {
