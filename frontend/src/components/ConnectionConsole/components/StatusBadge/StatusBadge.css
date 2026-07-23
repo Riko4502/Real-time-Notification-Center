@@ -1,0 +1,30 @@
+.status-badge-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  padding: var(--space-md) var(--space-base);
+  border-radius: 12px;
+}
+
+.status-text {
+  font-size: 0.85rem;
+  color: var(--badge-text);
+  flex-grow: 1;
+}
+
+.status-text strong {
+  color: var(--badge-strong);
+}
+
+.status-badge-space {
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.status-loader-spin {
+  color: #6366f1;
+  font-size: 0.95rem;
+}

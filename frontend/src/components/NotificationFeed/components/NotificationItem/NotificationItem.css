@@ -1,0 +1,51 @@
+.notif-card-wrapper {
+  animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.notif-alert-item {
+  border-radius: 12px !important;
+  padding: var(--space-md) var(--space-base) !important;
+  transition: all 0.2s ease !important;
+}
+
+.notif-alert-item:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.notif-message-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.notif-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-xs);
+}
+
+.notif-time-text {
+  font-size: 0.72rem;
+  opacity: 0.75;
+  font-family: monospace;
+}
+
+.notif-source-tag {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+}

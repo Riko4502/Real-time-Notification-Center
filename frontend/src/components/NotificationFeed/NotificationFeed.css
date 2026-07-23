@@ -1,0 +1,91 @@
+.notif-feed-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.notif-feed-collapse {
+  background: transparent !important;
+}
+
+.notif-feed-collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: var(--space-sm);
+}
+
+.notif-feed-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+}
+
+/* Filters Bar */
+.notif-filters-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding-bottom: var(--space-sm);
+}
+
+.notifications-list {
+  display: block;
+  position: relative;
+  overflow-y: auto;
+  max-height: 480px;
+  padding-right: var(--space-2xs);
+}
+
+.notif-filter-search-icon {
+  color: var(--icon-search-color);
+}
+
+.notif-filter-type-select {
+  width: 130px;
+}
+
+.notif-filter-source-select {
+  width: 140px;
+}
+
+.notif-feed-header-icon {
+  color: #6366f1;
+}
+
+.notif-feed-badge-tag {
+  margin: 0;
+  border-radius: 9999px;
+}
+
+.notif-empty-large {
+  margin: var(--space-3xl) 0;
+}
+
+.notif-empty-medium {
+  margin: var(--space-2xl) 0;
+}
+
+.notif-feed-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-3xl) 0;
+}
+
+.notif-feed-loader-icon {
+  color: #6366f1;
+  font-size: 1.5rem;
+}
+
+.notifications-list .virtual-item-wrapper {
+  padding-bottom: var(--space-md);
+}

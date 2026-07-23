@@ -1,0 +1,33 @@
+.log-line {
+  display: flex;
+  gap: var(--space-sm);
+  line-height: 1.4;
+  align-items: baseline;
+}
+
+.log-time {
+  color: var(--log-time);
+  flex-shrink: 0;
+}
+
+.log-text {
+  word-break: break-all;
+}
+
+.log-line.error .log-text {
+  color: var(--log-error-text);
+}
+
+.log-line.warning .log-text {
+  color: var(--log-warning-text);
+}
+
+.log-line.success .log-text {
+  color: var(--log-success-text);
+}
+
+.log-protocol-tag {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 0.65rem;
+}

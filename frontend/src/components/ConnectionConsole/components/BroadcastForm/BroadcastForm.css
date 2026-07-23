@@ -1,0 +1,22 @@
+.broadcast-panel-card {
+  background: var(--broadcast-panel-bg);
+  border: 1px solid var(--broadcast-panel-border);
+  border-radius: 16px;
+}
+
+.broadcast-title {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.broadcast-form-text-input-label {
+  margin-bottom: var(--space-sm);
+}
+
+.broadcast-form-type-select-label {
+  flex-grow: 1;
+  margin-bottom: 0;
+}

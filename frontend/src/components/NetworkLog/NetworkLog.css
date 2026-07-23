@@ -1,0 +1,72 @@
+.network-log-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.network-log-collapse {
+  background: transparent;
+}
+
+.network-log-collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: var(--space-sm);
+}
+
+.collapse-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.logs-terminal {
+  background: transparent;
+  border-radius: 14px;
+  padding: var(--space-base);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.75rem;
+  display: block;
+  position: relative;
+  height: 320px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.network-log-header-icon {
+  color: #10b981;
+}
+
+.network-log-badge-tag {
+  margin: 0;
+  border-radius: 9999px;
+}
+
+.network-log-empty-state {
+  margin: var(--space-2xl) 0;
+}
+
+.network-log-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.network-log-loader-icon {
+  color: #10b981;
+  font-size: 1.3rem;
+}
+
+.logs-terminal .virtual-item-wrapper {
+  padding-bottom: var(--space-xs);
+}

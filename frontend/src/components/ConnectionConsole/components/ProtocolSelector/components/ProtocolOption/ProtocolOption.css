@@ -1,0 +1,29 @@
+.protocol-option-card {
+  cursor: pointer;
+  background: var(--option-bg);
+  border: 1px solid var(--option-border);
+  border-radius: 14px;
+}
+
+.protocol-option-card:hover {
+  background: var(--option-hover-bg);
+  border-color: var(--option-hover-border);
+}
+
+.protocol-option-card.active {
+  background: var(--option-active-bg);
+  border-color: var(--option-active-border);
+  box-shadow: var(--option-active-shadow);
+}
+
+.option-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.option-desc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}

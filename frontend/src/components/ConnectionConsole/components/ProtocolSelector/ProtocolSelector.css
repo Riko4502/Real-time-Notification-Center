@@ -1,0 +1,13 @@
+.protocol-selector-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.protocol-selector-group h3 {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

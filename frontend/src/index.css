@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root,
+[data-theme='dark'] {
+  font-family:
+    'Plus Jakarta Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Spacing Scale Tokens (px step system) */
+  --space-2xs: 4px;
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-base: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+
+  /* Theme Tokens - Dark (Pure Obsidian OLED Black) */
+  --bg-page: #050505;
+  --bg-radial-1: rgba(99, 102, 241, 0.18);
+  --bg-radial-2: rgba(168, 85, 247, 0.14);
+
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-heading: #ffffff;
+
+  --card-bg: rgba(15, 15, 18, 0.85);
+  --card-border: rgba(255, 255, 255, 0.12);
+  --card-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.85), 0 0 20px rgba(99, 102, 241, 0.06);
+
+  --header-border: rgba(255, 255, 255, 0.1);
+
+  --badge-bg: rgba(22, 22, 28, 0.8);
+  --badge-border: rgba(255, 255, 255, 0.12);
+  --badge-text: #e2e8f0;
+  --badge-strong: #ffffff;
+
+  --option-bg: rgba(20, 20, 26, 0.6);
+  --option-border: rgba(255, 255, 255, 0.08);
+  --option-hover-bg: rgba(30, 30, 42, 0.85);
+  --option-hover-border: rgba(99, 102, 241, 0.4);
+  --option-active-bg: rgba(99, 102, 241, 0.16);
+  --option-active-border: #6366f1;
+  --option-active-shadow: 0 0 18px rgba(99, 102, 241, 0.3), inset 0 0 12px rgba(99, 102, 241, 0.1);
+
+  --broadcast-panel-bg: rgba(15, 15, 20, 0.6);
+  --broadcast-panel-border: rgba(255, 255, 255, 0.08);
+  --input-bg: #09090b;
+  --input-border: rgba(255, 255, 255, 0.15);
+  --input-text: #ffffff;
+
+  --btn-clear-bg: rgba(244, 63, 94, 0.12);
+  --btn-clear-border: rgba(244, 63, 94, 0.3);
+  --btn-clear-text: #ff6b81;
+  --btn-clear-hover-bg: rgba(244, 63, 94, 0.22);
+
+  --notif-card-bg: rgba(24, 24, 32, 0.45);
+  --notif-message: #f8fafc;
+
+  --terminal-bg: #000000;
+  --terminal-border: rgba(255, 255, 255, 0.12);
+  --terminal-empty: #64748b;
+  --log-time: #64748b;
+  --log-text: #f1f5f9;
+
+  --theme-toggle-bg: rgba(255, 255, 255, 0.08);
+  --theme-toggle-border: rgba(255, 255, 255, 0.14);
+  --theme-toggle-hover: rgba(255, 255, 255, 0.18);
+  --theme-toggle-icon: #fbbf24;
+
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(255, 255, 255, 0.2);
+  --scrollbar-thumb-hover: #6366f1;
+
+  --log-error-text: #ff5555;
+  --log-warning-text: #ffb86c;
+  --log-success-text: #50fa7b;
+
+  --icon-search-color: #cbd5e1;
+  --card-hover-shadow: 0 6px 16px rgba(0, 0, 0, 0.6), 0 0 12px rgba(99, 102, 241, 0.1);
+
+  --pill-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  --pill-hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.8), 0 0 12px rgba(99, 102, 241, 0.2);
+
+  --thumb-dark-bg: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --thumb-dark-shadow: 0 0 16px rgba(139, 92, 246, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  --thumb-light-bg: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --thumb-light-shadow: 0 0 16px rgba(251, 191, 36, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  --moon-icon-color: #ffffff;
+  --sun-icon-color: #78350f;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+
+  /* Theme Tokens - Light (Crystal Porcelain & Vivid Indigo) */
+  --bg-page: #f8fafc;
+  --bg-radial-1: rgba(99, 102, 241, 0.12);
+  --bg-radial-2: rgba(168, 85, 247, 0.08);
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-heading: #090d16;
+
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --card-border: rgba(203, 213, 225, 0.8);
+  --card-shadow: 0 16px 36px -8px rgba(99, 102, 241, 0.12), 0 4px 12px rgba(0, 0, 0, 0.03);
+
+  --header-border: rgba(226, 232, 240, 0.9);
+
+  --badge-bg: rgba(241, 245, 249, 0.95);
+  --badge-border: rgba(203, 213, 225, 0.8);
+  --badge-text: #1e293b;
+  --badge-strong: #0f172a;
+
+  --option-bg: rgba(248, 250, 252, 0.85);
+  --option-border: rgba(226, 232, 240, 0.9);
+  --option-hover-bg: rgba(238, 242, 255, 0.9);
+  --option-hover-border: rgba(165, 180, 252, 0.9);
+  --option-active-bg: rgba(99, 102, 241, 0.12);
+  --option-active-border: #4f46e5;
+  --option-active-shadow:
+    0 4px 16px rgba(79, 70, 229, 0.18), inset 0 0 12px rgba(99, 102, 241, 0.06);
+
+  --broadcast-panel-bg: rgba(248, 250, 252, 0.95);
+  --broadcast-panel-border: rgba(226, 232, 240, 0.9);
+  --input-bg: #ffffff;
+  --input-border: rgba(203, 213, 225, 0.9);
+  --input-text: #0f172a;
+
+  --btn-clear-bg: rgba(244, 63, 94, 0.1);
+  --btn-clear-border: rgba(244, 63, 94, 0.3);
+  --btn-clear-text: #e11d48;
+  --btn-clear-hover-bg: rgba(244, 63, 94, 0.18);
+
+  --notif-card-bg: rgba(248, 250, 252, 0.95);
+  --notif-message: #0f172a;
+
+  --terminal-bg: #090d16;
+  --terminal-border: rgba(30, 41, 59, 0.9);
+  --terminal-empty: #64748b;
+  --log-time: #64748b;
+  --log-text: #f8fafc;
+
+  --theme-toggle-bg: rgba(15, 23, 42, 0.06);
+  --theme-toggle-border: rgba(15, 23, 42, 0.14);
+  --theme-toggle-hover: rgba(15, 23, 42, 0.14);
+  --theme-toggle-icon: #6366f1;
+
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(148, 163, 184, 0.45);
+  --scrollbar-thumb-hover: #4f46e5;
+
+  --log-error-text: #ff6b6b;
+  --log-warning-text: #fbbf24;
+  --log-success-text: #34d399;
+
+  --icon-search-color: #475569;
+  --card-hover-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+
+  --pill-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --pill-hover-shadow: 0 6px 20px rgba(99, 102, 241, 0.18);
+
+  --thumb-dark-bg: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --thumb-dark-shadow: 0 0 16px rgba(139, 92, 246, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  --thumb-light-bg: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --thumb-light-shadow: 0 0 16px rgba(251, 191, 36, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  --moon-icon-color: #ffffff;
+  --sun-icon-color: #78350f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at top right, var(--bg-radial-1), transparent 45%),
+    radial-gradient(circle at bottom left, var(--bg-radial-2), transparent 45%), var(--bg-page);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Custom premium sleek scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 9999px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Disable individual element CSS transitions during View Transitions so the entire screen snapshot is rendered 100% instantly */
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition: none !important;
+}
+
+/* View Transitions Theme Circular Reveal Animation */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Fallback Ripple for browsers without View Transitions API */
+.theme-ripple-fallback {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+/* TanStack Virtual List Utilities */
+.virtual-list-inner {
+  height: var(--total-size);
+  position: relative;
+  width: 100%;
+}
+
+.virtual-item-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(var(--item-y));
+  box-sizing: border-box;
+}
