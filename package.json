@@ -7,6 +7,9 @@
     "backend",
     "frontend"
   ],
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "concurrently -k -p \"[{name}]\" -c \"cyan.bold,magenta.bold\" -n \"backend,frontend\" \"npm run start:dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
     "dev:backend": "npm run start:dev --workspace=backend",
